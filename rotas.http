@@ -1,0 +1,31 @@
+POST http://localhost:8000/videos
+Content-type: application/json
+
+{
+    "title": "Video 1", 
+    "description": "Videos adicionado 1",
+    "duration": 175
+}
+
+### GET
+
+GET http://localhost:8000/videos?search=1
+
+### GET 2
+GET http://localhost:8000/videos
+
+### PUT
+
+PUT http://localhost:8000/videos/8f3bbbd0-6719-4152-8290-8daf30cff3df
+Content-type: application/json
+
+{
+    "title": "Video 123", 
+    "description": "teste update",
+    "duration": 175
+}
+
+### DELETE
+DELETE  http://localhost:8000/videos/8f3bbbd0-6719-4152-8290-8daf30cff3df
+
+
